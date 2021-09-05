@@ -1,0 +1,25 @@
+body {
+    text-align: center;
+    font: bold 20px Arial, Helvetica, sans-serif;
+    color: honeydew;
+    background: url("poker_table.jpg") fixed no-repeat top center;
+    background-size: cover;
+
+}
+h1 {
+    color: goldenrod;
+}
+#message-el {
+    font-style: italic;
+}
+button {
+    background: goldenrod;
+    color: #016f32;
+    width: 150px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
