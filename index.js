@@ -5,7 +5,12 @@ let myCards = [],
   message = "",
   messageEl = document.getElementById("message-el"),
   sumEl = document.getElementById("sum-el"),
-  cardsEl = document.getElementById("cards-el");
+  cardsEl = document.getElementById("cards-el"),
+  player = {
+    name: "Roman",
+    money: 145 },
+  playerEl = document.getElementById("player-el");
+  playerEl.textContent = player.name + ": $" + player.money
 
 function getRandomCard() {
   let randomNumber = Math.floor(Math.random() * 13) + 1;
@@ -46,9 +51,10 @@ function renderGame() {
 }
 
 function newCard() {
-  console.log("Draw a new card");
+  if (isAlive === true && hasBlackJack === false) {
   let card = getRandomCard();
   sumOfCards += card;
   myCards.push(card);
   renderGame();
+  }
 }
