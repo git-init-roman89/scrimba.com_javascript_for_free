@@ -8,9 +8,10 @@ let myCards = [],
   cardsEl = document.getElementById("cards-el"),
   player = {
     name: "Roman",
-    money: 145 },
+    money: 145 
+  },
   playerEl = document.getElementById("player-el");
-  playerEl.textContent = player.name + ": $" + player.money
+  playerEl.textContent = player.name + ": $" + player.money;
 
 function getRandomCard() {
   let randomNumber = Math.floor(Math.random() * 13) + 1;
